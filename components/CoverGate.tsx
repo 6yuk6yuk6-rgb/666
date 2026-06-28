@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { COVER_TITLE, PLACEHOLDER_COVER_IMAGE } from "@/lib/constants";
 import type { CoverSettings } from "@/lib/types";
@@ -18,20 +18,30 @@ export default function CoverGate({ cover }: { cover: CoverSettings }) {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    if (window.sessionStorage.getItem("oracle-cover-entered") === "true") {
-      setVisible(false);
+    try {
+      if (window.sessionStorage.getItem("oracle-cover-entered") === "true") {
+        setVisible(false);
+      }
+    } catch {
+      setVisible(true);
     }
+  }, []);
+
+  const enter = useCallback(() => {
+    setLeaving(true);
+
+    try {
+      window.sessionStorage.setItem("oracle-cover-entered", "true");
+    } catch {
+      // The transition should still complete if browser storage is unavailable.
+    }
+
+    window.setTimeout(() => setVisible(false), 480);
   }, []);
 
   if (!visible) {
     return null;
   }
-
-  const enter = () => {
-    setLeaving(true);
-    window.sessionStorage.setItem("oracle-cover-entered", "true");
-    window.setTimeout(() => setVisible(false), 480);
-  };
 
   return (
     <section
@@ -54,14 +64,14 @@ export default function CoverGate({ cover }: { cover: CoverSettings }) {
 
           return (
             <div
-              aria-hidden={!src}
+              aria-hidden="true"
               className={`chibi-slot chibi-${index + 1} ${
                 src ? "" : "chibi-empty"
               }`}
               key={field}
             >
               {src ? (
-                <img alt={`치비 장식 ${index + 1}`} src={src} />
+                <img alt="" src={src} />
               ) : (
                 <span>♥</span>
               )}

@@ -891,6 +891,7 @@ textarea {
 
 .cover-leaving {
   opacity: 0;
+  pointer-events: none;
   visibility: hidden;
 }
 
@@ -899,6 +900,7 @@ textarea {
   border-bottom: 1px solid var(--border);
   height: 34px;
   left: 0;
+  pointer-events: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -909,6 +911,7 @@ textarea {
 .lace::after {
   content: "";
   left: 0;
+  pointer-events: none;
   position: absolute;
   right: 0;
 }
@@ -973,6 +976,7 @@ textarea {
   box-shadow: 0 4px 10px rgba(102, 90, 95, 0.04);
   height: 34px;
   left: 50%;
+  pointer-events: none;
   position: absolute;
   transform: translateX(-50%) rotate(-2deg);
   width: 150px;
@@ -1003,6 +1007,9 @@ textarea {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   min-width: 128px;
+  pointer-events: auto;
+  position: relative;
+  z-index: 5;
 }
 
 .chibi-slot {
@@ -1010,6 +1017,7 @@ textarea {
   display: flex;
   height: 132px;
   justify-content: center;
+  pointer-events: none;
   position: absolute;
   width: 132px;
 }
@@ -1017,6 +1025,7 @@ textarea {
 .chibi-slot img {
   height: 100%;
   object-fit: contain;
+  pointer-events: none;
   width: 100%;
 }
 
