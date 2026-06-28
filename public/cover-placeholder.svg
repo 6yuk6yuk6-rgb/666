@@ -1,0 +1,10 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Cover photo placeholder</title>
+  <desc id="desc">A soft diary style cover placeholder.</desc>
+  <rect width="1200" height="720" fill="#F8F4F2"/>
+  <rect x="70" y="62" width="1060" height="596" rx="28" fill="#FFFCFB" stroke="#E5D9D7" stroke-width="4"/>
+  <path d="M220 210C306 117 446 150 484 271C536 135 704 128 768 244C858 143 1016 202 1026 354C1127 387 1101 540 983 548C936 663 777 652 724 548C629 652 459 618 444 463C335 534 185 462 218 332C161 300 167 244 220 210Z" fill="#F1E8E6"/>
+  <path d="M598 263C630 213 705 217 731 272C759 217 838 216 868 270C905 338 846 414 731 487C615 414 558 334 598 263Z" fill="#E8D5DA" stroke="#CDAEB7" stroke-width="8"/>
+  <path d="M315 534H883" stroke="#899B90" stroke-width="15" stroke-linecap="round" opacity="0.35"/>
+  <path d="M400 579H800" stroke="#CDAEB7" stroke-width="13" stroke-linecap="round" opacity="0.45"/>
+</svg>

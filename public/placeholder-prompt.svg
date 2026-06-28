@@ -1,0 +1,12 @@
+<svg width="900" height="640" viewBox="0 0 900 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt image placeholder</title>
+  <desc id="desc">A soft rose and sage placeholder for prompts without an uploaded image.</desc>
+  <rect width="900" height="640" fill="#FFFCFB"/>
+  <rect x="36" y="36" width="828" height="568" rx="18" fill="#F8F4F2" stroke="#E5D9D7" stroke-width="3"/>
+  <path d="M142 170C196 108 287 126 314 202C346 117 453 110 494 185C552 116 653 151 657 248C754 250 797 360 725 421C760 505 664 578 589 525C525 598 409 567 393 472C307 530 205 472 229 376C135 360 96 224 142 170Z" fill="#F1E8E6"/>
+  <path d="M452 232C471 202 516 205 532 238C549 205 596 204 614 237C636 278 601 324 532 368C462 324 428 276 452 232Z" fill="#E8D5DA" stroke="#CDAEB7" stroke-width="5"/>
+  <circle cx="309" cy="262" r="52" fill="#E8D5DA" opacity="0.55"/>
+  <circle cx="612" cy="411" r="42" fill="#899B90" opacity="0.28"/>
+  <path d="M284 444H616" stroke="#CDAEB7" stroke-width="12" stroke-linecap="round" opacity="0.62"/>
+  <path d="M336 492H564" stroke="#899B90" stroke-width="10" stroke-linecap="round" opacity="0.42"/>
+</svg>
